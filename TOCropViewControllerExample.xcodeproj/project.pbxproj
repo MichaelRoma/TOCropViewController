@@ -94,6 +94,7 @@
 		2F5062F31F53E31F00AA9F14 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* TOCropViewController.m */; };
 		2F5062F41F53E32800AA9F14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223424751ABBC0CD00BBC2B1 /* ViewController.m */; };
 		2F5062F51F53E32D00AA9F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223424771ABBC0CD00BBC2B1 /* Main.storyboard */; };
+		D34F99E72A9706190036661B /* MichaelCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F99E62A9706190036661B /* MichaelCustomVC.swift */; };
 		FE3E0E3A21098448004DAE93 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 220C8E9F21062DD300A9B25D /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -215,6 +216,7 @@
 		A93782D3214A81A200CAE7EE /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		CDC8C5751C667B9100BB86A4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		CDC8C5771C667B9100BB86A4 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		D34F99E62A9706190036661B /* MichaelCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MichaelCustomVC.swift; sourceTree = "<group>"; };
 		E4C7D121221D7465003F381A /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		E4C7D122221D7548003F381A /* fa-IR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fa-IR"; path = "fa-IR.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
 		FFD1D3CD24D41CFF00E79B71 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 		2238CF341FC027550081B957 /* CropViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D34F99E62A9706190036661B /* MichaelCustomVC.swift */,
 				2238CF351FC029880081B957 /* CropViewController.swift */,
 				2238CF3E1FC029A90081B957 /* CropViewController.h */,
 				2238CF3F1FC029A90081B957 /* Info.plist */,
@@ -848,6 +851,7 @@
 				22B68FA51FFB3C0800601B1A /* TOCropToolbar.m in Sources */,
 				22B68FA61FFB3C0800601B1A /* TOCropView.m in Sources */,
 				22B68FA71FFB3C0800601B1A /* TOCropViewController.m in Sources */,
+				D34F99E72A9706190036661B /* MichaelCustomVC.swift in Sources */,
 				22DEA39F1FC1293A000FA1CB /* CropViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

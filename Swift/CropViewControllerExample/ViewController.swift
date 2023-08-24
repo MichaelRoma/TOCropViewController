@@ -21,7 +21,8 @@ class ViewController: UIViewController, CropViewControllerDelegate, UIImagePicke
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = (info[UIImagePickerController.InfoKey.originalImage] as? UIImage) else { return }
         
-        let cropController = CropViewController(croppingStyle: croppingStyle, image: image)
+       // let cropController = CropViewController(croppingStyle: croppingStyle, image: image)
+        let cropController = MichaelCustomVC(croppingStyle: croppingStyle, image: image)
         //cropController.modalPresentationStyle = .fullScreen
         cropController.delegate = self
         

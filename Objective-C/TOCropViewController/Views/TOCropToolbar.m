@@ -72,12 +72,13 @@
     
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_doneTextButton setTitle: _doneTextButtonTitle ?
-        _doneTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Done",
+        _doneTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Save",
 																  @"TOCropViewControllerLocalizable",
 																  resourceBundle,
                                                                   nil)
                      forState:UIControlStateNormal];
-    [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
+    [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f] forState:UIControlStateNormal];
+ //   [UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f]
     if (@available(iOS 13.0, *)) {
         [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f weight:UIFontWeightMedium]];
     } else {
@@ -85,6 +86,7 @@
     }
     [_doneTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [_doneTextButton sizeToFit];
+    _doneTextButton.backgroundColor = [UIColor colorWithRed:67/255.0 green:11/255.0 blue:224/255.0 alpha:1.0];
     [self addSubview:_doneTextButton];
     
     _doneIconButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -92,7 +94,6 @@
     [_doneIconButton setTintColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f]];
     [_doneIconButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_doneIconButton];
-
     // Set the default color for the done buttons
     self.doneButtonColor = nil;
 
